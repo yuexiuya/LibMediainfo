@@ -60,3 +60,10 @@ make install;
 ls -lrt /usr/local/lib/libmediainfo*
 ```
 如果上面的步骤执行成功，应该看到以下2个函数库：libmediainfo.a libmediainfo.la
+
+
+# 三、how to use
+
+解压后，参考
+
+libmediainfo_AllInclusive/MediaInfoLib/Source/Example
