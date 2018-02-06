@@ -1,22 +1,5 @@
 #include "AnalysisMediaInfo.h"
 
-
-AnalysisMediaInfo* AnalysisMediaInfo::pAnalysisMediaInfo = nullptr;
-
-/**
- * @brief instance
- *      sigleton
- * @return  ptr -> AnalysisMediaInfo
- */
-AnalysisMediaInfo *AnalysisMediaInfo::instance()
-{
-    if(pAnalysisMediaInfo == nullptr)
-    {
-        pAnalysisMediaInfo = new AnalysisMediaInfo();
-    }
-    return pAnalysisMediaInfo;
-}
-
 /**
  * @brief init
  *      init media info (CharSet)

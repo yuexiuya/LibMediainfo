@@ -15,12 +15,9 @@ typedef struct _ID3INFO {
 class AnalysisMediaInfo
 {
 public:
-    /**
-     * @brief instance
-     *      sigleton
-     * @return  ptr -> AnalysisMediaInfo
-     */
-    static AnalysisMediaInfo* instance();
+
+    AnalysisMediaInfo();
+    ~AnalysisMediaInfo();
 
     /**
      * @brief init
@@ -30,12 +27,7 @@ public:
 
     void analysisMedia(const std::string &filePath);
 
-    ~AnalysisMediaInfo();
-
     ID3INFO id3Info() const;
-
-protected:
-    AnalysisMediaInfo();
 
 private:
     //Var

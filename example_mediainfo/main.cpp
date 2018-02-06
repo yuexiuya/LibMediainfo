@@ -34,10 +34,10 @@ using namespace MediaInfoNameSpace;
 
 int main (int /*argc*/, Char * /*argv[]*/)
 {
-    AnalysisMediaInfo *pTest = AnalysisMediaInfo::instance();
-    pTest->init();
-    pTest->analysisMedia("/home/joshua/music/MyDearest.mp3");
-    while(1);
+    AnalysisMediaInfo pTest;
+    pTest.init();
+//    pTest.analysisMedia("./MyDearest.mp3");
+
 //    //Information about MediaInfo
 //    std::cout<<"========start============"<<std::endl;
 //    std::string Data_raw("my name", 8);
